@@ -1,16 +1,12 @@
 def get_squares(array, s):
     final_array = []
     max_range = s * 10 + s
-    if sum([len(x) for x in array]) > 0:
-        for lista in array:
-            squared_list = []
-            for num in lista:
-                square = num ** 2
-                if 0 <= square <= max_range:
-                    squared_list.append(square)
-            squared_list_sorted = bubble_sort(squared_list)
-            final_array.append(squared_list_sorted)
-        return final_array
+    if len(array) > 0:
+        for num in array:
+            square = num ** 2
+            if 0 <= square <= max_range:
+                final_array.append(square)
+        return bubble_sort(final_array)
     else:
         return ' la lista esta vacía'
 
@@ -28,10 +24,10 @@ def main():
     name = 'Manuela Arcila Cruz'
     md5_hash = '90f950c7d82232b3e35dc63532d3a7267a3b93fb'
     s = 9
-    array1 = [[1, 2, 3, 5, 6, 8, 9]]
-    array2 = [[-2, -1]]
-    array3 = [[-6, -5, 0, 5, 6]]
-    array4 = [[-10, 10]]
+    array1 = [1, 2, 3, 5, 6, 8, 9]
+    array2 = [-2, -1]
+    array3 = [-6, -5, 0, 5, 6]
+    array4 = [-10, 10]
     print(get_squares(array1, s))
     print(get_squares(array2, s))
     print(get_squares(array3, s))
