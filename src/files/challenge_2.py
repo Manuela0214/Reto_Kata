@@ -1,14 +1,14 @@
-def get_squares(array, s):
+def get_squares(list, s):
     final_array = []
     max_range = s * 10 + s
-    if len(array) > 0:
-        for num in array:
+    if len(list) > 0:
+        for num in list:
             square = num ** 2
             if 0 <= square <= max_range:
                 final_array.append(square)
         return bubble_sort(final_array)
     else:
-        return ' la lista esta vacía'
+        return 'la lista esta vacía'
 
 
 def bubble_sort(list):

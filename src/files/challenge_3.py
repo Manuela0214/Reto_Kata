@@ -1,13 +1,16 @@
 
-def min_change(coins):
-    coins.sort()
+def min_change(list):
+    list.sort()
     min_change = 1
-    for coin in coins:
-        if coin <= min_change:
-            min_change += coin
-        else:
-            break
-    return min_change
+    if len(list) > 0:
+        for coin in list:
+            if coin <= min_change:
+                min_change += coin
+            else:
+                break
+        return min_change
+    else:
+        return min_change
 
 
 def main():

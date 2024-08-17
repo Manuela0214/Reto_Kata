@@ -1,15 +1,17 @@
 def delete_digits(list, s):
     final_list = []
-    for number in list[::-1]:
-        temporal = ''
-        if number <= 100:
-            for digit_str in str(number):
-                digit = int(digit_str)
-                if digit < s:
-                    temporal += digit_str
-            if not temporal == '':
-                final_list.append(int(temporal))
-    return final_list
+    if len(list) > 0:
+        for number in list[::-1]:
+            temporal = ''
+            if number <= 100:
+                for digit_str in str(number):
+                    digit = int(digit_str)
+                    if digit < s:
+                        temporal += digit_str
+                if not temporal == '':
+                    final_list.append(int(temporal))
+        return final_list
+    return 'la lista esta vacía'
 
 
 def main():
