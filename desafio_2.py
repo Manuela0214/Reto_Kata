@@ -22,9 +22,9 @@ def bubble_sort(list):
 def main():
     print('----------Pruebas Desafio 2')
     name = 'Manuela Arcila Cruz'
-    md5_hash = '90f950c7d82232b3e35dc63532d3a7267a3b93fb'
-    s = 9
-    array1 = [1, 2, 3, 5, 6, 8, 9]
+    md5_hash = '8be80bd961c26a4191fac0afc8948cea'
+    s = 8
+    array1 = [1, 2, 3, 5, 6, 8, 9, 10]
     array2 = [-2, -1]
     array3 = [-6, -5, 0, 5, 6]
     array4 = [-10, 10]

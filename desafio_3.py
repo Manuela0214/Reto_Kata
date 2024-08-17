@@ -19,6 +19,5 @@ def main():
     print(min_change(coins2))
     print(min_change(coins3))
 
-
 if __name__ == "__main__":
     main()
