@@ -21,18 +21,20 @@ def bubble_sort(list):
 
 def main():
     print('----------Pruebas Desafio 2')
-    name = 'Manuela Arcila Cruz'
-    md5_hash = '8be80bd961c26a4191fac0afc8948cea'
+    # name = 'Manuela Arcila Cruz'
+    # md5_hash = '8be80bd961c26a4191fac0afc8948cea'
     s = 8
-    array1 = [1, 2, 3, 5, 6, 8, 9, 10]
+    array1 = [1, 2, 3, 5, 6, 8, 9]
     array2 = [-2, -1]
     array3 = [-6, -5, 0, 5, 6]
     array4 = [-10, 10]
+    array5 = [7, 10, 9, 5, 2]
     print(get_squares(array1, s))
     print(get_squares(array2, s))
     print(get_squares(array3, s))
     print(get_squares(array4, s))
-
+    print(get_squares(array5, s))
+    print(get_squares([], s))
 
 if __name__ == "__main__":
     main()
